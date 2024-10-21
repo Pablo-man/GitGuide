@@ -35,9 +35,7 @@ git config --global core.autocrlf input #LInux, Mac, Unix
 ```
 ---
 ### Áreas de GIT
-* Workspace
-* Staging Area
-* Reposity
+![GitAreas](img/GitAreas.png "GIT")
 ---
 ### Comandos Básicos
 ```HTML
@@ -47,5 +45,35 @@ git status
  git add <NOMBREARCHIVO> || git add . 
 <!-- Eliminar un elemento del área de staging -->
  git rm --cached <NOMBREARCHIVO>
+ gti rm --cached -f <NOMBREELEMENTO> 
+<!-- Hacer un commit -->
+ git commit -m "<MENSAJE>"
+ git commit 
 ```
+---
+### RESTORE, CHECKOUT Y MÁS
+---
+#### restore
+Recupera un archivo que este presente en el area de staging pero ya no en el working directory
+
+`git restore <NOMBREARCHIVO>`
+#### checkout
+Deshace los cambios realizados a un archivo en el working directory a una versión que toma como referencia el último commit
+
+`git checkout <NOMBREARCHIVO`
+#### restore
+Deshace los cambios presentes en el área de staging y en el working directory para remplazarlos por el último commit registrado
+
+`git reset --hard`
+#### rename
+Modifica el nombre de un archivo
+
+`git mv <NOMBREARCHIVOORIGINAL> <NOMBREARCHIVONUEVO>`
+
+#### short
+Salida del comando `git status` más simplificada
+
+`git status -s || git status --short`
+
+
 

@@ -35,6 +35,17 @@ git config --global core.autocrlf input #LInux, Mac, Unix
 ```
 ---
 ### Áreas de GIT
-* Espacio de trabajo
+* Workspace
 * Staging Area
-* Repositorio
+* Reposity
+---
+### Comandos Básicos
+```HTML
+<!-- Visualizar estado de los archivos que conforman al respositorio -->
+git status
+<!-- Agregar archivos al área de staging uno por uno o todos -->
+ git add <NOMBREARCHIVO> || git add . 
+<!-- Eliminar un elemento del área de staging -->
+ git rm --cached <NOMBREARCHIVO>
+```
+

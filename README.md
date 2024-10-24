@@ -75,5 +75,4 @@ Salida del comando `git status` más simplificada
 
 `git status -s || git status --short`
 
-
-
+Revisado por Edwin David 
